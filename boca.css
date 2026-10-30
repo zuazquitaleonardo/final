@@ -1,0 +1,288 @@
+body{
+	margin:0;
+	view-transition-name: root; /* Opcional, pero recomendado para el body */
+}
+
+/* Estilos para el Contenedor de Transición (Overlay) */
+#transition-overlay {
+    position: fixed; /* Fijo en la pantalla */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #1a1a1a; /* Un color sólido detrás del video */
+    
+    /* Por defecto, está invisible y oculto */
+    opacity: 0; 
+    visibility: hidden; 
+    
+    /* Animación de fundido suave */
+    transition: opacity 0.4s ease-out, visibility 0.4s; 
+    
+    z-index: 9999; /* Asegura que esté por encima de todos los elementos */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Clase para mostrar la transición */
+#transition-overlay.active {
+    opacity: 1; /* Se hace completamente visible */
+    visibility: visible;
+}
+
+header{
+	display:flex;
+	width:100%;
+	height:100px;
+	background:linear-gradient(#152949,#fcc100);
+	justify-content:space-evenly;
+	align-items:center;
+}
+
+.logo{
+	width:30%;
+	height:auto;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+}
+
+.logo2{
+	width:30%;
+	height:auto;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	padding-top:2%;
+}
+
+img{
+	height:auto;
+	width:100%;
+}
+
+main{
+	display:flex;
+	width:100%;
+	height:441px;
+	justify-content:space-evenly;
+	align-items:center;
+	flex-direction: column;
+	background-color:#152949;
+}
+
+.galeria{
+	display:flex;
+	width:95%;
+	height:auto;
+	justify-content:space-evenly;
+	align-items:center;
+	flex-direction: row;
+}
+
+.galeria h2{
+	padding:30px;
+	letter-spacing:2px;
+	font-size:28px;
+	text-shadow:4px 1px 1px #fcc100;
+	color:#152949;
+}
+
+.fotos{
+	display:flex;
+	width:95%;
+	height:auto;
+	justify-content:space-around;
+	align-items:center;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.foto{
+	width:100%;
+	height:auto;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	
+}
+
+.foto1{
+	width:100%;
+	height:auto;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+}
+
+h1{
+	display:flex;
+	justify-content:space-evenly;
+	align-items:center;
+	color:#152949;
+	letter-spacing:2px;
+	font-size:30px;
+	background-color:#152949;
+	text-shadow:2px 2px 1px #fcc100;
+}
+
+h2{
+	display:flex;
+	justify-content:space-evenly;
+	align-items:center;
+	color:#ebb760;
+	letter-spacing:2px;
+	font-size:23px;
+}
+
+h3{
+	display:flex;
+	justify-content:space-evenly;
+	align-items:center;
+	color:#ebb760;
+	letter-spacing:2px;
+	font-size:23px;
+}
+
+.borde{
+	display:flex;
+	align-items:center;
+	width:30%;
+	height:auto;
+	border-style:solid;
+	border-width:2px;
+	border-color:#63625e;
+	padding:1%;
+	flex-direction:column;
+	margin-bottom:30px;
+}
+
+.icono{
+	width:30%;
+	height:auto;
+}
+
+p{
+	letter-spacing:2px;
+	font-size:18px;
+	color:#fcc100;
+	text-align:justify;
+}
+
+.texto{
+	display:flex;
+	width:90%;
+	height:auto;
+	text-align:center;
+	margin-bottom:30px;
+	flex-direction:column;
+	align-items:center;
+}
+
+.foto{
+	width:40%;
+	height:auto;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+
+}
+
+.padre{
+	display:flex;
+	width:90%;
+	height:100px;
+	justify-content:space-around;
+	align-items:center;
+	flex-wrap:wrap;
+	margin:auto;
+	padding:2%;
+	border-radius:15px;
+}
+
+.hijo{
+	display:flex;
+	width:200px;
+	height: 80px;
+	margin-bottom:5px;
+	flex-direction:column;
+	border-radius:10px;
+	border:solid;
+	border-color:black;
+	margin-bottom:5px;
+}
+
+.hijo img{
+	width:100%;
+	height:auto;
+	background-color:white;
+	border-top-right-radius:8px;
+	border-top-left-radius:8px;
+}
+
+.textito{
+	display:flex;
+	border-bottom-right-radius:8px;
+	border-bottom-left-radius:8px;
+	width:100%;
+	height:auto;
+	background-color:#fcc100;
+	text-shadow:2px 1px 1px #152949;
+	text-align:center;
+}
+
+.textito p{
+	border-bottom-right-radius:8px;
+	border-bottom-left-radius:8px;
+	width:100%;
+	height:auto;
+	color:#152949;
+	padding-left:4%;
+}
+
+.mio{
+	display:flex;
+	width:95%;
+	height:auto;
+	justify-content:space-around;
+	flex-wrap: nowrap;
+	margin:auto;
+	padding:2%;
+	border-radius:15px;
+	align-items: flex-start;
+}
+
+.mio h2{
+	font-size:32px;
+}
+
+.yo{
+	display:flex;
+	width:90%;
+	height:auto;
+	justify-content:space-around;
+	align-items:center;
+	flex-wrap:wrap;
+	margin:auto;
+	padding:2%;
+	flex-direction: column;
+}
+
+footer{
+	display:flex;
+	flex-direction: column;
+	width:100%;
+	height:100px;
+	background:linear-gradient(#fcc100,#152949);
+	justify-content:space-evenly;
+	align-items:center;
+}
+
+.foter{
+	display:flex;
+	width:100%;
+	height:auto;
+	justify-content:space-evenly;
+	align-items:center;
+}
