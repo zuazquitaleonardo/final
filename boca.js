@@ -8,55 +8,55 @@ const casacasInvalidas = [0, 4, 6, 7, 8, 9, 11, 12, 14, 15, 21, 23, 24];
 const casaca = [
     {
         numero: 1,
-        nombre: "montero";
+        nombre: "montero"
     },
     {
         numero: 2,
-        nombre: "dilollo";
+        nombre: "dilollo"
     },
     {
         numero: 3,
-        nombre: "blanco";
+        nombre: "blanco"
     },
     {
         numero: 5,
-        nombre: "paredes";
+        nombre: "paredes"
     },
     {
         numero: 10,
-        nombre: "aranda";
+        nombre: "aranda"
     },
     {
         numero: 13,
-        nombre: "valencia";
+        nombre: "valencia"
     },
     {
         numero: 16,
-        nombre: "merentiel";
+        nombre: "merentiel"
     },
     {
         numero: 17,
-        nombre: "lozano";
+        nombre: "lozano"
     },
     {
         numero: 18,
-        nombre: "delgado";
+        nombre: "delgado"
     },
     {
         numero: 19,
-        nombre: "flores";
+        nombre: "flores"
     },
     {
         numero: 20,
-        nombre: "velasco";
+        nombre: "velasco"
     },
     {
         numero: 22,
-        nombre: "villa";
+        nombre: "villa"
     },
     {
         numero: 25,
-        nombre: "ascasibar";
+        nombre: "ascasibar"
     },
 ]
 
@@ -73,19 +73,23 @@ function generarCasaca() {
 
 
 function vacilar() {
-    //generarCasaca() esto debera ser llamado al final para cambiar el numero de la casaca
+    generarCasaca() //esto debera ser llamado al final para cambiar el numero de la casaca
     console.log(numero);
-
-    //texto = inputUsuario.value;
-    //texto = texto.replace(" ","");
-    //texto = texto.toLowerCase();
-    // if(texto == "dilollo"){
-    //    console.log("-CORRECTO: es di lollo");
-    //divRespuesta.innerHTML = "-CORRECTO: es di lollo";
-    // } else{
-    //    console.log("-INCORRECTO, PISTA: La Vacila");
-    //divRespuesta.innerHTML = "-INCORRECTO, PISTA: La Vacila";
-    // }
+    let objetoEncontrado = casaca.find(item => item.numero == numero);
+    console.log(objetoEncontrado)
+    
+    let elNombre = objetoEncontrado.nombre
+    console.log(elNombre)
+    texto = inputUsuario.value;
+    texto = texto.replace(" ","");
+    texto = texto.toLowerCase();
+     if(texto == "dilollo"){
+        console.log("-CORRECTO: es di lollo");
+    divRespuesta.innerHTML = "-CORRECTO: es di lollo";
+     } else{
+        console.log("-INCORRECTO, PISTA: La Vacila");
+    divRespuesta.innerHTML = "-INCORRECTO, PISTA: La Vacila";
+     }
 }
 
 boton.addEventListener("click", vacilar);
